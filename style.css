@@ -42,6 +42,46 @@ body, html {
     transform: scale(0.95) rotate(-2deg);
 }
 
+img.imgag {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.527);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+img.imgag.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+img.imgag:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+img {
+    transition: transition 0.3s ease;
+    border-radius: 22px;
+}
+
+img:hover {
+    transform: scale(1.05) rotate(-1deg);
+}
+
+img.fly-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+img.fly-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+img.fly-in:hover {
+    transform: scale(1.075) rotate(2deg);
+}
+
 button {
     padding: 10px 18px;
     border: none;
